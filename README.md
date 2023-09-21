@@ -1,5 +1,7 @@
 # Quiz Project using Python
 
+### By Suyash Handa
+
 This is my submission for round 1 of BITS Pilani's GDSC (a quiz project using python). It is a command line application.
 
 ## Features

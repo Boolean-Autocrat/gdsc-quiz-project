@@ -8,6 +8,7 @@ This is my submission for round 1 of BITS Pilani's GDSC (a quiz project using py
 
 - Class-based, modular design (oop ftw!)
 - Skip Questions: Entering anything other than true or false will skip the question (0 points).
+- Question Summary: View a summary of your previous answers during the quiz by navigating to the previous questions.
 - Random Question Shuffling: Questions are presented in a random order for each quiz session.
 - Timer System: Time is tracked for each question, and a point is deducted if you take too long.
 - Navigation: Move between questions easily.

@@ -1,5 +1,6 @@
 from quiz.question import Question
 from colorama import init, Fore, Back, Style
+from quiz.welcome_art import welcome_text
 import time
 import random
 
@@ -32,6 +33,7 @@ class QuizManager:
             self.score -= 1
             print(Style.BRIGHT + Back.WHITE + Fore.RED + "Incorrect!")
             current_q.status = "incorrect"
+        print()
         self.display_options()
         self.current_question_index += 1
         print("-" * 20)
@@ -40,6 +42,11 @@ class QuizManager:
         time.sleep(self.timeout_duration)
 
     def start_quiz(self):
+        print(Style.BRIGHT + Back.WHITE + Fore.BLUE + welcome_text, end="\n")
+        print(
+            "Da Rules: \n1. The questions are true/false.\n2. After spending >= 20 seconds on a single question, 1 point will be deducted.\n3. Follow the instructions on screen and have fun!"
+        )
+        input("Press any key to start the quiz...")
         self.load_question()
 
     def do_questions_remain(self):
@@ -84,7 +91,7 @@ class QuizManager:
         print("-" * 20)
         print(f"Q: {current_question.question_text}")
         print(
-            f"Correct Answer: {current_question.answer} - Your Answer: {current_question.status}"
+            f"Correct Answer: {current_question.answer}; Player Status: {current_question.status}"
         )
         print("-" * 20)
         self.display_options()
@@ -96,6 +103,6 @@ class QuizManager:
 
     def submit_quiz(self):
         print("-" * 20)
-        print(f"Your score is {Fore.GREEN + str(self.score) + Fore.WHITE}")
+        print(f"Your score is {Fore.GREEN + str(self.score) + Fore.WHITE}.")
         print(Style.BRIGHT + Back.WHITE + Fore.CYAN + "Thanks for playing!")
         exit()

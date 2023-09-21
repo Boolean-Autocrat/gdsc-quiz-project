@@ -20,5 +20,9 @@ This is my submission for round 1 of BITS Pilani's GDSC (a quiz project using py
 
 - Clone this repository
 - (Optional, it's better) Create a virtual environment
+  ```
+    python -m venv venv
+  ```
+- Activate the virtual environment `venv\Scripts\activate` (Windows) or `source venv/bin/activate` (Linux)
 - Install the requirements using `pip install -r requirements.txt`
 - Run the `main.py` file using `python main.py`

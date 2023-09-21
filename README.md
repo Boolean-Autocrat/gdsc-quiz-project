@@ -1,8 +1,8 @@
-## Quiz Project using Python
+# Quiz Project using Python
 
 This is my submission for round 1 of BITS Pilani's GDSC (a quiz project using python). It is a command line application.
 
-# Features
+## Features
 
 - Class-based, modular design (oop ftw!)
 - Skip Questions: Entering anything other than true or false will skip the question (0 points).
@@ -13,7 +13,7 @@ This is my submission for round 1 of BITS Pilani's GDSC (a quiz project using py
 - Color Coding: The program indicate correct, incorrect, and skipped questions.
 - Quiz Submission: View your final score and exit gracefully when done.
 
-# How to run
+## How to run
 
 - Clone this repository
 - (Optional, it's better) Create a virtual environment

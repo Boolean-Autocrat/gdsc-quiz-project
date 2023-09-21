@@ -44,7 +44,7 @@ class QuizManager:
     def start_quiz(self):
         print(Style.BRIGHT + Back.WHITE + Fore.BLUE + welcome_text, end="\n")
         print(
-            "Da Rules: \n1. The questions are true/false.\n2. After spending >= 20 seconds on a single question, 1 point will be deducted.\n3. Follow the instructions on screen and have fun!"
+            "Da Rules: \n1. The questions are true/false.\n2. After spending >= 20 seconds on a single question, 1 point will be deducted.\n3. Follow the instructions on screen and have fun!\n4. Entering anything other than true/false will skip the question (0 points).\n"
         )
         input("Press any key to start the quiz...")
         self.load_question()
